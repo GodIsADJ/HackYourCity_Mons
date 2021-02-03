@@ -6,10 +6,6 @@ class LocationUnknownException(Exception):
     pass
 
 
-class LocationNotInNyException(Exception):
-    pass
-
-
 def __do_geocode(address: str, attempt: int = 1, max_attempts: int = 5) -> object:
     geolocator = Nominatim(user_agent="nyc-navigation")
     try:
@@ -25,7 +21,5 @@ def get_coordinates(address: str):
     if location == None:
         # return "unknown address"
         raise LocationUnknownException
-    elif "New York" not in location.address:
-        raise LocationNotInNyException
     else:
         return (location.latitude, location.longitude)  # , location.address)
