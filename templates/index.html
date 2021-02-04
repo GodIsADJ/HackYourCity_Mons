@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+	<link rel="stylesheet" href="/static/style.css">
+	<title>Bi MONS</title>
+</head>
+<body>
+	<div class="title"><a href="#"><h1>Bi-</h1><img src="/static/img/logo-noBG.png" alt="Logo"></a></div>
+		 <div class="date"><p>Event for the </p> <input style="transform: translateY(-20%);" type="date" id="start" name="trip-start"
+			value="2021-02-14"
+			min="2018-01-01" max="2018-12-31">
+		</div> 
+	<div class="main">
+
+		<div class="events">
+			<!-- event généré auto -->
+			<div class="event">
+				 <h5>Ensemble Mendelssohn</h5> 
+				<a href="route" class='event-a'><img class='event-image' src="/static/img/audience.jpg" alt=""></a>
+				<ul>
+					<li><img src="/static/img/disabled.svg" alt=""></li>
+					<li style="background-color: #F98451;"><img src="/static/img/restaurant.svg" alt=""></li>
+					<li style="background-color:silver;"><img src="/static/img/toilet.svg" alt=""></li>
+				</ul>
+			</div>
+			<div class="event">
+				<h5>Kheiron</h5>
+				<a href="route" class='event-a'><img class='event-image' src="/static/img/building.jpg" alt=""></a>
+				<ul>
+					<li><img src="/static/img/disabled.svg" alt=""></li>
+					<li style="background-color: #F98451;"><img src="/static/img/restaurant.svg" alt=""></li>
+					<li style="background-color:silver;"><img src="/static/img/toilet.svg" alt=""></li>
+				</ul>
+			</div>
+			<div class="event">
+				<h5>À l’Unisson</h5>
+				<a href="route" class='event-a'><img class='event-image' src="/static/img/concert.jpg" alt=""></a>
+				<ul>
+					<li><img src="/static/img/disabled.svg" alt=""></li>
+					<li style="background-color: #F98451;"><img src="/static/img/restaurant.svg" alt=""></li>
+					<li style="background-color:silver;"><img src="/static/img/toilet.svg" alt=""></li>
+				</ul>
+			</div>
+			<div class="event">
+				<h5>Mons au temps de Waudru</h5>
+				<a href="route" class='event-a'><img class='event-image' src="/static/img/theatre.jpg" alt=""></a>
+				<ul>
+					<li><img src="/static/img/disabled.svg" alt=""></li>
+					<li style="background-color: #F98451;"><img src="/static/img/restaurant.svg" alt=""></li>
+					<li style="background-color:silver;"><img src="/static/img/toilet.svg" alt=""></li>
+				</ul>
+			</div>
+			<div class="event">
+				<h5>Trio Capricorn</h5>
+				<a href="route" class='event-a'><img class='event-image' src="/static/img/auditorium.jpg" alt=""></a>
+				<ul>
+					<li><img src="/static/img/disabled.svg" alt=""></li>
+					<li style="background-color: #F98451;"><img src="/static/img/restaurant.svg" alt=""></li>
+					<li style="background-color:silver;"><img src="/static/img/toilet.svg" alt=""></li>
+				</ul>
+			</div>
+			<div class="event">
+				<h5>Claudio Capéo</h5>
+				<a href="route" class='event-a'><img class='event-image' src="/static/img/concerts.jpg" alt=""></a>
+				<ul>
+					<li><img src="/static/img/disabled.svg" alt=""></li>
+					<li style="background-color: #F98451;"><img src="/static/img/restaurant.svg" alt=""></li>
+					<li style="background-color:silver;"><img src="/static/img/toilet.svg" alt=""></li>
+				</ul>
+			</div>
+			<div class="button">
+			<input type="button" name="submit" class="button" value="Submit">
+			</div>
+		</div>
+
+	</div>
+	<script type="text/javascript"
+	src="{{ url_for('static', filename='script.js') }}"></script>
+	<script type="application/json"
+	src="{{ url_for('static', filename='event.json') }}"></script>
+
+</body>
+</html>

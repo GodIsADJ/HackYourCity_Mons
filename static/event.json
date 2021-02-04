@@ -1,4 +1,5 @@
-"records": [
+
+{"records" : [
     {
         "datasetid": "fetes-et-manifestations-dans-la-ville-de-mons",
         "recordid": "53e98b97a16448b90eb4841e3c19f50fca51b9c5",
@@ -148,4 +149,4 @@
         },
         "record_timestamp": "2021-01-22T14:45:23.315000+00:00"
     }
-]
+]}
