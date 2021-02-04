@@ -28,6 +28,7 @@ def __get_coordinates(df):
     #Get coordinates (latitude,longitude)
     # df["address"].replace(regex="\r+\n+\t+", value=" ", inplace=True)
     # df["coord"] = df["address"].apply(get_coordinates)
+    # df.to_csv("Stuff/test.csv")
     df = pd.read_csv("Stuff/test.csv")
 
     #Delete rows without coordinates

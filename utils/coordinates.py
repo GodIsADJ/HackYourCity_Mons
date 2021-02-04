@@ -21,4 +21,4 @@ def get_coordinates(address: str):
     if location == None:
         return None
     else:
-        return (location.latitude, location.longitude)  # , location.address)
+        return [location.latitude, location.longitude]  # , location.address)
