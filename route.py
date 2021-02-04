@@ -4,7 +4,7 @@ import osmnx as ox
 
 # PRE : prend comme entrée les coordonnées de départ et d'arrivée sous forme de tuple et le poids 
 # POST : retourne une liste de node du chemin le plus court entre les deux points 
-def get_route (point_from : tuple,  point_to : tuple, weight) :
+def get_route (point_from : tuple,  point_to : tuple, weight = 'length'): 
     ox.config(log_console=True, use_cache=True)
 
     origin_node =  ox.get_nearest_node(G_walk,(50.454096, 3.9418326))
@@ -34,7 +34,7 @@ point_from = (50.454096, 3.9418326)
 point_to = (50.4537353, -3.9451452)
 
 # calcul le chemin le plus court entre deux points
-route = get_route(point_from, point_to, 1)
+route = get_route(point_from, point_to, weight=0)
 
 # génère la carte du trajet
 generate_graph()
