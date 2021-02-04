@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #fff8e8;
+	font-family:'Archivo Black', sans-serif;
+	font-size: 20px;
+}
+
+.title{
+	width: 100%;
+a{
+	margin-left: 15%;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	text-decoration: none;
+	h1{
+		width: 12%;
+		font-size: 4vw;
+		font-weight: 900;
+		color: rgb(70, 70, 70);
+	}
+	img{
+		transform: translate(-10%,15%);
+		width: 30%;
+		z-index: -1;
+	}
+
+}
+:active{
+	border: none;
+}
+:hover{
+	text-decoration: none;
+}
+}
+.date{
+	display: inline-flex;
+	color: black;
+	height: 5%;
+	p{
+		margin-right: 0.5vw;
+	}
+	input{
+		margin-top: 2%;
+		height: 90%;}
+}
+.main{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2%;
+	
+	.events{
+		margin-top: 5%;
+		margin-left: 10%;
+		margin-right: 10%;
+		display: grid;
+		grid-gap: 2vw;
+			grid-template-columns: 50% 50%;
+			grid-template-rows: 33% 33% 33%;
+		.event{
+			text-align: right;
+			img{
+				height: 100%;
+				width: 100%;
+				filter: grayscale(100%);
+			}:hover{
+				filter: grayscale(0%);
+			}
+			ul{
+				display: inline-flex;
+				list-style-type: none;
+				
+				li{
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					transform: translate(-400%,-200%);
+					margin: 25%;
+					padding: 20%;
+					background-color: #00A4D4;
+					border-radius: 50%;
+					img{
+						height: 10px;
+						width: 10px;
+					}
+				}
+			}
+		}
+		.button{
+			grid-column: 1/3;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-top: 2%;
+			input{
+				border: none;
+				border-radius: 10px;
+				background-color:#FE0000;
+				font-size: 25px;
+				font-weight: 400;
+				color: white;
+				margin-left: 25%;
+				margin-right: 25%;
+				box-shadow:  25px 28px 16px -2px rgba(0,0,0,0.49);
+				margin-bottom: 50px;
+			}
+			:hover{
+				box-shadow: none;
+			}
+		}
+	}
+}
+.adress{
+	display: flex;
+	justify-content: center;
+	height: auto;
+	width: 100%;
+	margin-bottom: 2vw;
+	input{
+		width: 50%;
+	}
+}
+.main-route{
+	width: 100%;
+	height: 125vw;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2vw;
+
+.map{
+	width: 95%;
+	height: 100%;
+	border: 2px solid black;
+}
+}
+.map-content{
+	width: 100%;
+	padding-left: 15%;
+	padding-right: 15%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	ul{
+		li{
+			margin-top: 1vw;
+		}
+	}
+}
+.print-route{
+	width: 100%;
+	height: 10vw;
+	display: flex;
+	justify-content: center;
+	margin-top: 2%;
+	margin-bottom: 5%;
+	input{
+		width: 25%;
+		font-size: 35px;
+		font-weight: 700;
+		border: none;
+		border-radius: 10px;
+		background-color: #FE0000;
+		color: white;
+		box-shadow:  25px 28px 16px -2px rgba(0,0,0,0.49);
+	}
+	:hover{
+		box-shadow: none;
+		transform: translate(2%,2%);
+	}
+
+}
+@media (min-width: 768px) {
+	.title{
+		margin-top: 2.5%;
+		a{
+	img{
+		transform: translate(-10%,5%);
+	}
+}
+
+}
+	.main{
+		.events{
+			.event{
+		ul{
+			li{					
+				img{		
+					height: 15px;
+					width: 15px;
+					transform: translate(-10%,10%);
+					}
+				}
+			}
+		}
+		}
+		}
+
+  .button{
+	  input{
+		  height: 5vw;
+	  }
+  }
+  .main-route{
+	  height: 75vw;
+  }
+}
+@media(min-width: 1154px){
+	.title{
+			margin-top: 2.5%;
+	a{
+		h1{
+
+			font-size: 4vw;
+		}
+		img{
+			transform: translate(-10%,-1%);
+			z-index: -1;
+		}
+	}
+	}
+	.date{
+		margin-left: 20%;
+	}
+	.main{
+	.events{margin-top: 0;
+		.event{
+			h5{
+				margin-bottom: 1vw;
+				text-align: center;
+				font-weight: 700;
+				text-decoration: underline;
+			}
+			ul{
+				li{
+					display: flex;
+					align-items: center;
+					justify-content: center;					
+					img{		
+						height: 20px;
+						width: 20px;
+						transform: translate(0);
+						}
+					}
+				}
+			}
+	}
+	}
+	.button{
+		input{
+			height: 3vw;
+		}
+	}
+	.main-route{
+		height: 35vw;
+	}
+	.adress{
+		input{
+			width: 25%;
+		}
+	}
+	.print-route{
+		height: 3vw;
+	}
+
+}
+// @media print {
+
+// 	.adress{
+// 		visibility: hidden !important;
+// 	}
+
+// 	.print-route {
+// 		visibility: hidden !important; // To hide 
+// 	}
+
+// 	.main-route {
+// 		visibility: visible; // Print only required part
+// 		-webkit-print-color-adjust: exact !important;
+// 	}
+
+// 	.map-content{
+// 		visibility: visible; // Print only required part
+// 		text-align: left;
+// 		-webkit-print-color-adjust: exact !important;
+// 	}
+// }
