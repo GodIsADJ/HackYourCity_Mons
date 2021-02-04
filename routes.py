@@ -1,5 +1,6 @@
 from flask import Flask
 from flask import jsonify, render_template
+from utils.map import get_map
 
 
 import random
@@ -21,7 +22,11 @@ def home():
 
 @app.route("/route")
 def analyse():
-    data = {}
+    start_location = (50.454096, 3.9418326)
+    end_location = (50.4537353, -3.9451452)
+
+    data = get_map(start_location, end_location)
+
     return render_template("route.html", data=data)
 
 

@@ -1,7 +1,7 @@
 import pandas as pd
 from urllib.request import urlopen
 import json
-from coordinates import get_coordinates, LocationUnknownException
+from utils.coordinates import get_coordinates, LocationUnknownException
 
 
 def get_unique_list(df):
