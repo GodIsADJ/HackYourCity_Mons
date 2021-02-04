@@ -7,7 +7,7 @@ class LocationUnknownException(Exception):
 
 
 def __do_geocode(address: str, attempt: int = 1, max_attempts: int = 5) -> object:
-    geolocator = Nominatim(user_agent="nyc-navigation")
+    geolocator = Nominatim(user_agent="Hackaton-Mons")
     try:
         return geolocator.geocode(address)
     except GeocoderTimedOut:
@@ -19,7 +19,6 @@ def __do_geocode(address: str, attempt: int = 1, max_attempts: int = 5) -> objec
 def get_coordinates(address: str):
     location = __do_geocode(address)
     if location == None:
-        # return "unknown address"
-        raise LocationUnknownException
+        return None
     else:
         return (location.latitude, location.longitude)  # , location.address)
