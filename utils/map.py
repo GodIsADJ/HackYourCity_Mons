@@ -12,7 +12,7 @@ def get_map(point_from: tuple=(50.454096, 3.9418326),  point_to: tuple=(50.45373
     m = ox.plot_route_folium(G_walk, route)
 
     df_trees = get_notable_trees()
-    tree_coord_list = get_unique_list(df_trees)
+    tree_list_coordinate = get_unique_list(df_trees)
 
     for i, coord in enumerate(tree_list_coordinate, start=0):
 
@@ -30,4 +30,4 @@ def get_map(point_from: tuple=(50.454096, 3.9418326),  point_to: tuple=(50.45373
         folium.Marker([latitude, longitude],
                       popup="<i>Mt. Hood Meadows</i>").add_to(m)
 
-    return m._repr_html_
+    return m._repr_html_()
