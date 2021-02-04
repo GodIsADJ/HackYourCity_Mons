@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 	<title>Bi MONS</title>
 </head>
@@ -17,7 +17,8 @@
 		<div class="events">
 			<!-- event généré auto -->
 			<div class="event">
-				<a href="#"><img src="../img/banner-mons.jpg" alt=""></a>
+				<!-- <h5>Event title</h5> -->
+				<a href="#" class='event-a'><img class='event-image' src="../img/banner-mons.jpg" alt=""></a>
 				<ul>
 					<li><img src="../img/disabled.svg" alt=""></li>
 					<li style="background-color: #F98451;"><img src="../img/restaurant.svg" alt=""></li>
@@ -25,43 +26,48 @@
 				</ul>
 			</div>
 			<div class="event">
-				<a href="#"><img src="../img/banner-mons.jpg" alt=""></a>
+				<!-- <h5>Event title</h5> -->
+				<a href="#" class='event-a'><img class='event-image' src="../img/banner-mons.jpg" alt=""></a>
 				<ul>
 					<li><img src="../img/disabled.svg" alt=""></li>
-					<li><img src="../img/restaurant.svg" alt=""></li>
-					<li><img src="../img/toilet.svg" alt=""></li>
+					<li style="background-color: #F98451;"><img src="../img/restaurant.svg" alt=""></li>
+					<li style="background-color:silver;"><img src="../img/toilet.svg" alt=""></li>
 				</ul>
 			</div>
 			<div class="event">
-				<a href="#"><img src="../img/banner-mons.jpg" alt=""></a>
+				<!-- <h5>Event title</h5> -->
+				<a href="#" class='event-a'><img class='event-image' src="../img/banner-mons.jpg" alt=""></a>
 				<ul>
 					<li><img src="../img/disabled.svg" alt=""></li>
-					<li><img src="../img/restaurant.svg" alt=""></li>
-					<li><img src="../img/toilet.svg" alt=""></li>
+					<li style="background-color: #F98451;"><img src="../img/restaurant.svg" alt=""></li>
+					<li style="background-color:silver;"><img src="../img/toilet.svg" alt=""></li>
 				</ul>
 			</div>
 			<div class="event">
-				<a href="#"><img src="../img/banner-mons.jpg" alt=""></a>
+				<!-- <h5>Event title</h5> -->
+				<a href="#" class='event-a'><img class='event-image' src="../img/banner-mons.jpg" alt=""></a>
 				<ul>
 					<li><img src="../img/disabled.svg" alt=""></li>
-					<li><img src="../img/restaurant.svg" alt=""></li>
-					<li><img src="../img/toilet.svg" alt=""></li>
+					<li style="background-color: #F98451;"><img src="../img/restaurant.svg" alt=""></li>
+					<li style="background-color:silver;"><img src="../img/toilet.svg" alt=""></li>
 				</ul>
 			</div>
 			<div class="event">
-				<a href="#"><img src="../img/banner-mons.jpg" alt=""></a>
+				<!-- <h5>Event title</h5> -->
+				<a href="#" class='event-a'><img class='event-image' src="../img/banner-mons.jpg" alt=""></a>
 				<ul>
 					<li><img src="../img/disabled.svg" alt=""></li>
-					<li><img src="../img/restaurant.svg" alt=""></li>
-					<li><img src="../img/toilet.svg" alt=""></li>
+					<li style="background-color: #F98451;"><img src="../img/restaurant.svg" alt=""></li>
+					<li style="background-color:silver;"><img src="../img/toilet.svg" alt=""></li>
 				</ul>
 			</div>
 			<div class="event">
-				<a href="../route.html"><img src="../img/banner-mons.jpg" alt=""></a>
+				<!-- <h5>Event title</h5> -->
+				<a href="../route.html" class='event-a'><img class='event-image' src="../img/banner-mons.jpg" alt=""></a>
 				<ul>
 					<li><img src="../img/disabled.svg" alt=""></li>
-					<li><img src="../img/restaurant.svg" alt=""></li>
-					<li><img src="../img/toilet.svg" alt=""></li>
+					<li style="background-color: #F98451;"><img src="../img/restaurant.svg" alt=""></li>
+					<li style="background-color:silver;"><img src="../img/toilet.svg" alt=""></li>
 				</ul>
 			</div>
 			<div class="button">
@@ -70,5 +76,10 @@
 		</div>
 
 	</div>
+	<script>
+		document.querySelector('.event-a').addEventListener('click', ()=>{
+			document.querySelector('.event-image').style.filter = "grayscale(0%)";
+		})
+	</script>
 </body>
 </html>
