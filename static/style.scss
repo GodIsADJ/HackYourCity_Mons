@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 *{
 	margin: 0;
 	padding: 0;
@@ -67,6 +68,16 @@ a{
 			grid-template-rows: 33% 33% 33%;
 		.event{
 			text-align: right;
+			h5{
+				font-family: 'Lobster', cursive;
+				transform: translateY(150%);
+				position: relative;
+				z-index: 2;
+				text-align: center;
+				font-size: 45px;
+				color: white;
+				font-weight: 700;
+			}
 			img{
 				height: 100%;
 				width: 100%;
@@ -92,6 +103,14 @@ a{
 						width: 10px;
 					}
 				}
+			}
+			p{
+				text-align: left;
+				position: relative;
+				z-index: 2;
+				font-size: 30px;
+				color: white;
+				transform: translate(2%,-400%);
 			}
 		}
 		.button{
@@ -139,7 +158,7 @@ a{
 .map{
 	width: 95%;
 	height: 100%;
-	border: 2px solid black;
+
 }
 }
 .map-content{
@@ -233,12 +252,7 @@ a{
 	.main{
 	.events{margin-top: 0;
 		.event{
-			h5{
-				margin-bottom: 1vw;
-				text-align: center;
-				font-weight: 700;
-				text-decoration: underline;
-			}
+
 			ul{
 				li{
 					display: flex;
