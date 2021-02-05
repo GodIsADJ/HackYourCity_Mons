@@ -134,8 +134,7 @@ body {
   margin-bottom: 2vw; }
   .main-route .map {
     width: 95%;
-    height: 100%;
-    border: 2px solid black; }
+    height: 100%; }
 
 .map-content {
   width: 100%;
