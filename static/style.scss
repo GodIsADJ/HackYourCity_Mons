@@ -104,6 +104,14 @@ a{
 					}
 				}
 			}
+			p{
+				text-align: left;
+				position: relative;
+				z-index: 2;
+				font-size: 30px;
+				color: white;
+				transform: translate(2%,-400%);
+			}
 		}
 		.button{
 			grid-column: 1/3;
