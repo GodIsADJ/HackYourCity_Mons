@@ -27,7 +27,6 @@ def get_map(point_from: tuple=(50.454096, 3.9418326),  point_to: tuple=(50.45373
         latitude = float(l[0])
         longitude = float(l[1])
 
-        folium.Marker([latitude, longitude],
-                      popup="<i>Mt. Hood Meadows</i>").add_to(m)
+        folium.Marker([latitude, longitude], icon=folium.Icon(color='green', icon='tree', prefix='fa')).add_to(m)
 
     return m._repr_html_()
