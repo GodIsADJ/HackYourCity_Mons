@@ -44,7 +44,7 @@ HackYourCity_Mons
     |               
 ```
 
-## Documentation to librairies we used
+## Documentation of the libraries we have used
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/) : To display the website
 - [Pandas](https://pandas.pydata.org/pandas-docs/stable/reference/frame.html) : to clean the dataset
 - [Geopy](https://geopy.readthedocs.io/en/latest/) : To get the coordinates
