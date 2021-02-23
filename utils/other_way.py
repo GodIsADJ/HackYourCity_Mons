@@ -27,7 +27,7 @@ def demo_map1():
 
 
     # récupère les coordonnées de la liste arbre
-    df_trees = pd.read_csv("Stuff/test.csv")
+    df_trees = pd.read_csv("data/test.csv")
     df_trees = df_trees.dropna()
     tree_coord_list = df_trees["coord"].unique()
 
@@ -58,7 +58,7 @@ def demo_map1():
     icon = folium.features.CustomIcon(icon_path,icon_size=(28, 30))
     folium.Marker([50.455476, 3.9517038], icon=icon, popup=popup).add_to(route_map)
 
-    df = pd.read_csv('Stuff/arceaux-velos_publication.csv',sep=';')
+    df = pd.read_csv('data/arceaux-velos_publication.csv',sep=';')
     parking_bike = df['Geo Point']
 
     for i, coord in enumerate(parking_bike, start=0) : 
@@ -72,7 +72,7 @@ def demo_map1():
         icon = folium.features.CustomIcon(icon_url,icon_size=(28, 30))  # Creating a custom Icon
         folium.Marker([latitude,longitude], icon=icon).add_to(route_map)
 
-    df = pd.read_csv('Stuff/monuments_mons_lat_lon.csv')
+    df = pd.read_csv('data/monuments_mons_lat_lon.csv')
     monuments = df['coordinate']
     df = df.dropna()
 

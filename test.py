@@ -25,7 +25,7 @@ def generate_graph(m):
     m.save(filepath)
 
 def tree_list() : 
-    df_trees = pd.read_csv("Stuff/test.csv")
+    df_trees = pd.read_csv("data/coordinates.csv")
     df_trees = df_trees.dropna()
     tree_coord_list = df_trees["coord"].unique()
     return tree_coord_list 
