@@ -24,7 +24,7 @@ HackYourCity_Mons
 |   routes.py : The back-end running with Flask
 |   
 +---clustering_station_velo
-|       cluster.py : A file to help the city of Mons to choose where to place bicycle parking
+|       cluster.py : A machine learning algorithm to help the city of Mons to choose where to place bicycle parking
 |       
 +---data : The csv files we can use
 |       ...
